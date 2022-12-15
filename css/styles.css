@@ -7,6 +7,19 @@
   --color-WHITE: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  padding: 0;
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 16px;
@@ -15,13 +28,29 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* _____________RESET____________ */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
 /* _____________HEADER______________ */
+
+
 
 .logo {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-NAVY-BLUE);
@@ -30,7 +59,6 @@ body {
 .logo-web {
   color: var(--color-IRIS);
 }
-
 
 .logo:focus {
   color: var(--color-IRIS);
@@ -67,6 +95,8 @@ body {
   color: var(--color-IRIS);
 }
 
+
+
 /* ________________MAIN________________ */
 
 /* __________TITLE SECTION________ */
@@ -79,23 +109,29 @@ body {
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
   color: var(--color-WHITE);
+  margin-bottom: 48px;
+  width: 492px;
 }
 
-.hero-button {
+.hero-button{
   font-weight: 600;
   line-height: 1.1;
-  display: flex;
-  align-items: center;
+  padding: 16px 32px;
   letter-spacing: 0.04em;
   color: var(--color-WHITE);
   background: var(--color-IRIS);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.button-hero:hover, 
+
+.button-hero:hover,
 .button-hero:focus {
   color: var(--color-IRIS);
   background: var(--color-WHITE);
@@ -110,6 +146,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .benefits-description {
   line-height: 1.5;
@@ -151,6 +188,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .team-descriptiom {
   line-height: 1.5;
@@ -166,6 +204,11 @@ body {
 .logo-footer {
   color: var(--color-CLOUD);
   text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.logo-web {
+  color: var(--color-IRIS);
 }
 
 .logo-footer:hover,
