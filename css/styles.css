@@ -257,6 +257,7 @@ p {
   display: block;
   color: var(--color-CLOUD);
   text-transform: uppercase;
+  padding-top: 100px;
   margin-bottom: 16px;
 }
 
